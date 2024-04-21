@@ -79,11 +79,11 @@ while running:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_w or event.key == pygame.K_UP and SNAKE_DIRECTION != (0, 1):
                 SNAKE_DIRECTION = (0, -1)
-            elif event.key == pygame.K_DOWN and SNAKE_DIRECTION != (0, -1):
+            elif event.key == pygame.K_s or event.key == pygame.K_DOWN and SNAKE_DIRECTION != (0, -1):
                 SNAKE_DIRECTION = (0, 1)
-            elif event.key == pygame.K_LEFT and SNAKE_DIRECTION != (1, 0):
+            elif event.key == pygame.K_a or event.key == pygame.K_LEFT and SNAKE_DIRECTION != (1, 0):
                 SNAKE_DIRECTION = (-1, 0)
-            elif event.key == pygame.K_RIGHT and SNAKE_DIRECTION != (-1, 0):
+            elif event.key == pygame.K_d or event.key == pygame.K_RIGHT and SNAKE_DIRECTION != (-1, 0):
                 SNAKE_DIRECTION = (1, 0)
 
     # Move the snake
